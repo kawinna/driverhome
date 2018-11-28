@@ -16,8 +16,7 @@
     A:visited	{
     text-decoration:none;
     }
-   
-    @media (min-width: 320px) and (max-width: 480px) {
+    @media only screen and (max-width: 768px) {
     /* For mobile phones: */
     [class*="w3-container"] {
         width: 100%;
@@ -27,76 +26,86 @@
 
 <body>
 
-<!-- Header-->
-    <header class="w3-display-container w3-grayscal" id="home">
-        <div class="w3-center w3-white w3-text-grey">
-            <div class="w3-display-container">
-                <img src="assets/driverhome/images/driver.png" class="w3-image"style="width:25%" alt="Avatar">
-            </div>
-            <div class="w3-container">
-                <p><i class="fa fa-id-card fa-fw w3-margin-right w3-large w3-text-teal"></i>ID : DV00012</p>
-                <p><i class="fa fa-user-circle fa-fw w3-margin-right w3-large w3-text-teal"></i>นายจิรกิตติ์ ถาวรวงศ์</p>
-                <p><i class="fa fa-check-circle fa-fw w3-margin-right w3-large w3-text-teal"></i>ตรวจเอกสารเรียบร้อยแล้ว
-                <a href="dvedit.html"><i>แก้ไขข้อมูล</i></a></p>
-                <p>คะแนนความนิยม</p>
-                <i class="fa fa-star fa-fw w3-margin-right w3-large w3-text-teal"></i>
-                <i class="fa fa-star fa-fw w3-margin-right w3-large w3-text-teal"></i>
-                <i class="fa fa-star fa-fw w3-margin-right w3-large w3-text-teal"></i>
-                <i class="fa fa-star-half-full fa-fw w3-margin-right w3-large w3-text-teal"></i>
-                <i class="fa fa-star-o fa-fw w3-margin-right w3-large w3-text-teal"></i>
-                <hr>
-            </div>
-        </div>
-    </header>
 
     <!-- Menu Container -->
-    <div class="w3-container" id="main">
-        <div class="w3-content">
-            <div class="w3-row w3-center">
-                <a href="javascript:void(0)" onclick="openMenu(event, 'order');" id="myLink">
-                    <div class="w3-col s4 tablink w3-hover-green">ออเดอร์</div>
-                </a>
-                <a href="javascript:void(0)" onclick="openMenu(event, 'send');">
-                    <div class="w3-col s4 tablink w3-hover-green">ยืนยันการส่ง</div>
-                </a>
-                <a href="javascript:void(0)" onclick="openMenu(event, 'history');">
-                    <div class="w3-col s4 tablink w3-hover-green">ประวัติการส่ง</div>
-                </a>
+    <div class="w3-top">
+            <div class="w3-bar w3-white w3-padding w3-card">
+                <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction4()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+              <img src="logo.png">
+              <div class="w3-right">
+                <a href="javascript:void(0)" onclick="openMenu(event, 'order');" id="myLink" class="w3-bar-item w3-button tablink w3-hover-teal  w3-hide-small">ออเดอร์</a>
+                <a href="javascript:void(0)" onclick="openMenu(event, 'send');" class="w3-bar-item w3-button tablink w3-hover-teal  w3-hide-small">ยืนยันการส่ง</a>
+                <a href="javascript:void(0)" onclick="openMenu(event, 'history');" class="w3-bar-item w3-button tablink w3-hover-teal  w3-hide-small">ประวัติการส่ง</a>
+                <a href="index.html" class="w3-bar-item w3-button tablink w3-hover-teal  w3-hide-small" >ออกจากระบบ</a>
             </div>
-      
+            </div>
+            <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+            <div id="navDemo" class="w3-bar-block w3-teal w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+                <a href="javascript:void(0)" onclick="openMenu(event, 'order');" id="myLink" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction4()">ออเดอร์</a>
+        <a href="javascript:void(0)" onclick="openMenu(event, 'send');" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction4()">ยืนยันการส่ง</a>
+        <a href="javascript:void(0)" onclick="openMenu(event, 'history');" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction4()">ประวัติการส่ง</a>
+        <a href="index.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction4()">ออกจากระบบ</a>
+      </div>
+    </div>
+
+    <div class="w3-container w3-padding-32 w3-large" id="main">
+        <div class="w3-content">
             <div id="order" class="w3-container menu w3-padding-16 w3-white">
+                    <header class="w3-display-container w3-grayscal" id="home">
+                            <div class="w3-white w3-text-grey">
+                                <div class="w3-row">
+                                    <div class="w3-col m3 w3-padding-large">
+                                        <img src="assets/driverhome/images/driver.png" class="w3-image"style="width:100%" alt="Avatar">
+                                    </div>
+                                    <div class="w3-col m9 w3-padding-large">
+                                        <p><i class="fa fa-id-card fa-fw w3-margin-right w3-large w3-text-teal"></i>ID : DV00012</p>
+                                        <p><i class="fa fa-user-circle fa-fw w3-margin-right w3-large w3-text-teal"></i>นายจิรกิตติ์ ถาวรวงศ์</p>
+                                        <p><i class="fa fa-check-circle fa-fw w3-margin-right w3-large w3-text-teal"></i>ตรวจเอกสารเรียบร้อยแล้ว
+                                        <a href="dvedit.html"><i>แก้ไขข้อมูล</i></a></p>
+                                        <p>คะแนนความนิยม
+                                        <i class="fa fa-star fa-fw w3-margin-right w3-large w3-text-teal"></i>
+                                        <i class="fa fa-star fa-fw w3-margin-right w3-large w3-text-teal"></i>
+                                        <i class="fa fa-star fa-fw w3-margin-right w3-large w3-text-teal"></i>
+                                        <i class="fa fa-star-half-full fa-fw w3-margin-right w3-large w3-text-teal"></i>
+                                        <i class="fa fa-star-o fa-fw w3-margin-right w3-large w3-text-teal"></i></p>
+                                    </div>
+                                </div>
+                            </div>
+                    </header>
+                    <hr>
+                    <p class="w3-center">ออเดอร์</p>
                 <table class="w3-table-all w3-hoverable">
                     <tr>
-                        <td>OD0012</td>
-                        <td>Kawinna</td>
+                        <td>OD0012
+                        Kawinna</td>
                         <td>5 กม.</td>
                         <td><button class="w3-button w3-red w3-round-xlarge" onclick="myFunction2()">ปฏิเสธ</button></td>
                         <td><button class="w3-button w3-green w3-round-xlarge" onclick="myFunction()">ตอบรับ</button></td>
                     </tr>
                     <tr>
-                        <td>OD0010</td>
-                        <td>Cha</td>
+                        <td>OD0010
+                        Cha</td>
                         <td>10.5 กม.</td>
                         <td><button class="w3-button w3-red w3-round-xlarge" onclick="myFunction2()">ปฏิเสธ</button></td>
                         <td><button class="w3-button w3-green w3-round-xlarge" onclick="myFunction()">ตอบรับ</button></td>
                     </tr>
                     <tr>
-                        <td>OD0008</td>
-                        <td>A-riza</td>
+                        <td>OD0008
+                        A-riza</td>
                         <td>3.2 กม.</td>
                         <td><button class="w3-button w3-red w3-round-xlarge" onclick="myFunction2()">ปฏิเสธ</button></td>
                         <td><button class="w3-button w3-green w3-round-xlarge" onclick="myFunction()">ตอบรับ</button></td>
                     </tr>
                     <tr>
-                        <td>OD0005</td>
-                        <td>Nan</td>
+                        <td>OD0005
+                        Nan</td>
                         <td>7.8 กม.</td>
                         <td><button class="w3-button w3-red w3-round-xlarge" onclick="myFunction2()">ปฏิเสธ</button></td>
                         <td><button class="w3-button w3-green w3-round-xlarge" onclick="myFunction()">ตอบรับ</button></td>
                     </tr>
                     <tr>
-                        <td>OD0004</td>
-                        <td>Kawinna</td>
+                        <td>OD0004
+                        Kawinna</td>
                         <td>6.2 กม.</td>
                         <td><button class="w3-button w3-red w3-round-xlarge" onclick="myFunction2()">ปฏิเสธ</button></td>
                         <td><button class="w3-button w3-green w3-round-xlarge" onclick="myFunction()">ตอบรับ</button></td>
@@ -105,34 +114,57 @@
             </div>
         
             <div id="send" class="w3-container menu w3-padding-16 w3-white">
+                    <header class="w3-display-container w3-grayscal" id="home">
+                            <div class="w3-white w3-text-grey">
+                                <div class="w3-row">
+                                    <div class="w3-col m3 w3-padding-large">
+                                        <img src="assets/driverhome/images/driver.png" class="w3-image"style="width:100%" alt="Avatar">
+                                    </div>
+                                    <div class="w3-col m9 w3-padding-large">
+                                        <p><i class="fa fa-id-card fa-fw w3-margin-right w3-large w3-text-teal"></i>ID : DV00012</p>
+                                        <p><i class="fa fa-user-circle fa-fw w3-margin-right w3-large w3-text-teal"></i>นายจิรกิตติ์ ถาวรวงศ์</p>
+                                        <p><i class="fa fa-check-circle fa-fw w3-margin-right w3-large w3-text-teal"></i>ตรวจเอกสารเรียบร้อยแล้ว
+                                        <a href="dvedit.html"><i>แก้ไขข้อมูล</i></a></p>
+                                        <p>คะแนนความนิยม
+                                        <i class="fa fa-star fa-fw w3-margin-right w3-large w3-text-teal"></i>
+                                        <i class="fa fa-star fa-fw w3-margin-right w3-large w3-text-teal"></i>
+                                        <i class="fa fa-star fa-fw w3-margin-right w3-large w3-text-teal"></i>
+                                        <i class="fa fa-star-half-full fa-fw w3-margin-right w3-large w3-text-teal"></i>
+                                        <i class="fa fa-star-o fa-fw w3-margin-right w3-large w3-text-teal"></i></p>
+                                    </div>
+                                </div>
+                            </div>
+                    </header>
+                    <hr>
+                    <p class="w3-center">ยืนยันการส่ง</p>
                 <table class="w3-table-all w3-hoverable">
                     <tr>
-                        <td>OD0012</td>
-                        <td>Kawinna</td>
+                        <td>OD0012
+                        Kawinna</td>
                         <td><button class="w3-button w3-red w3-round-xlarge"><a href="dvcomplaint.html">แจ้งปัญหา</a></button></td>
                         <td><button class="w3-button w3-green w3-round-xlarge" onclick="myFunction3()">ยืนยัน</button></td>
                     </tr>
                     <tr>
-                        <td>OD0010</td>
-                        <td>Cha</td>
+                        <td>OD0010
+                        Cha</td>
                         <td><button class="w3-button w3-red w3-round-xlarge"><a href="dvcomplaint.html">แจ้งปัญหา</a></button></td>
                         <td><button class="w3-button w3-green w3-round-xlarge" onclick="myFunction3()">ยืนยัน</button></td>
                     </tr>
                     <tr>
-                        <td>OD0008</td>
-                        <td>A-riza</td>
+                        <td>OD0008
+                        A-riza</td>
                         <td><button class="w3-button w3-red w3-round-xlarge"><a href="dvcomplaint.html">แจ้งปัญหา</a></button></td>
                         <td><button class="w3-button w3-green w3-round-xlarge" onclick="myFunction3()">ยืนยัน</button></td>
                     </tr>
                     <tr>
-                        <td>OD0005</td>
-                        <td>Nan</td>
+                        <td>OD0005
+                        Nan</td>
                         <td><button class="w3-button w3-red w3-round-xlarge"><a href="dvcomplaint.html">แจ้งปัญหา</a></button></td>
                         <td><button class="w3-button w3-green w3-round-xlarge" onclick="myFunction3()">ยืนยัน</button></td>
                     </tr>
                     <tr>
-                        <td>OD0004</td>
-                        <td>Kawinna</td>
+                        <td>OD0004
+                        Kawinna</td>
                         <td><button class="w3-button w3-red w3-round-xlarge"><a href="dvcomplaint.html">แจ้งปัญหา</a></button></td>
                         <td><button class="w3-button w3-green w3-round-xlarge" onclick="myFunction3()">ยืนยัน</button></td>
                     </tr>  
@@ -142,6 +174,29 @@
       
       
             <div id="history" class="w3-container menu w3-padding-16 w3-white">
+                    <header class="w3-display-container w3-grayscal" id="home">
+                            <div class="w3-white w3-text-grey">
+                                <div class="w3-row">
+                                    <div class="w3-col m3 w3-padding-large">
+                                        <img src="assets/driverhome/images/driver.png" class="w3-image"style="width:100%" alt="Avatar">
+                                    </div>
+                                    <div class="w3-col m9 w3-padding-large">
+                                        <p><i class="fa fa-id-card fa-fw w3-margin-right w3-large w3-text-teal"></i>ID : DV00012</p>
+                                        <p><i class="fa fa-user-circle fa-fw w3-margin-right w3-large w3-text-teal"></i>นายจิรกิตติ์ ถาวรวงศ์</p>
+                                        <p><i class="fa fa-check-circle fa-fw w3-margin-right w3-large w3-text-teal"></i>ตรวจเอกสารเรียบร้อยแล้ว
+                                        <a href="dvedit.html"><i>แก้ไขข้อมูล</i></a></p>
+                                        <p>คะแนนความนิยม
+                                        <i class="fa fa-star fa-fw w3-margin-right w3-large w3-text-teal"></i>
+                                        <i class="fa fa-star fa-fw w3-margin-right w3-large w3-text-teal"></i>
+                                        <i class="fa fa-star fa-fw w3-margin-right w3-large w3-text-teal"></i>
+                                        <i class="fa fa-star-half-full fa-fw w3-margin-right w3-large w3-text-teal"></i>
+                                        <i class="fa fa-star-o fa-fw w3-margin-right w3-large w3-text-teal"></i></p>
+                                    </div>
+                                </div>
+                            </div>
+                    </header>
+                    <hr>
+                    <p class="w3-center">ประวัติการส่ง</p>
                 <table class="w3-table-all w3-hoverable">
                     <tr>
                         <td>OD0012</td>
@@ -176,10 +231,7 @@
                 </table>
             </div>
         </div><br>
-      
-        <div class="w3-center">
-            <button style="w3-center" class="w3-button w3-teal w3-round-xlarge" ><a href="index.html">ออกจากระบบ</a></button>
-        </div><br>
+      <br>
 
 <script>
     // Tabbed Menu
@@ -217,6 +269,16 @@
         function myFunction3() {
             alert("ทางระบบกำลังโอนเงินให้คุณ");
     }
+
+    //ซ่อนเมนู
+    function myFunction4() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
 </script>
                      
 </body>

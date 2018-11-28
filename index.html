@@ -6,10 +6,8 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
- <!--Theme Responsive css-->
- <link rel="stylesheet" href="responsive.css" />
-
-
+<!--Theme Responsive css-->
+<link rel="stylesheet" href="responsive.css" />
 <style>
     body, html {height: 100%}
     html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
@@ -33,14 +31,22 @@
     <!-- Menu Container -->
     <div class="w3-top">
             <div class="w3-bar w3-white w3-padding w3-card">
-                <img src="logo.png">
+                <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction4()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+              <img src="logo.png">
               <div class="w3-right">
-                <a href="javascript:void(0)" onclick="openMenu(event, 'order');" id="myLink" class="w3-bar-item w3-button tablink w3-hover-teal">ออเดอร์</a>
-                <a href="javascript:void(0)" onclick="openMenu(event, 'send');" class="w3-bar-item w3-button tablink w3-hover-teal">ยืนยันการส่ง</a>
-                <a href="javascript:void(0)" onclick="openMenu(event, 'history');" class="w3-bar-item w3-button tablink w3-hover-teal">ประวัติการส่ง</a>
-                <a href="index.html" class="w3-bar-item w3-button tablink w3-hover-teal" >ออกจากระบบ</a>
+                <a href="javascript:void(0)" onclick="openMenu(event, 'order');" id="myLink" class="w3-bar-item w3-button tablink w3-hover-teal  w3-hide-small">ออเดอร์</a>
+                <a href="javascript:void(0)" onclick="openMenu(event, 'send');" class="w3-bar-item w3-button tablink w3-hover-teal  w3-hide-small">ยืนยันการส่ง</a>
+                <a href="javascript:void(0)" onclick="openMenu(event, 'history');" class="w3-bar-item w3-button tablink w3-hover-teal  w3-hide-small">ประวัติการส่ง</a>
+                <a href="index.html" class="w3-bar-item w3-button tablink w3-hover-teal  w3-hide-small" >ออกจากระบบ</a>
             </div>
             </div>
+            <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+            <div id="navDemo" class="w3-bar-block w3-teal w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+                <a href="javascript:void(0)" onclick="openMenu(event, 'order');" id="myLink" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction4()">ออเดอร์</a>
+        <a href="javascript:void(0)" onclick="openMenu(event, 'send');" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction4()">ยืนยันการส่ง</a>
+        <a href="javascript:void(0)" onclick="openMenu(event, 'history');" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction4()">ประวัติการส่ง</a>
+        <a href="index.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction4()">ออกจากระบบ</a>
+      </div>
     </div>
 
     <div class="w3-container w3-padding-32 w3-large" id="main">
@@ -265,7 +271,15 @@
             alert("ทางระบบกำลังโอนเงินให้คุณ");
     }
 
-    
+    //ซ่อนเมนู
+    function myFunction4() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
 </script>
                      
 </body>

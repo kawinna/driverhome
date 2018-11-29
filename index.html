@@ -1,257 +1,252 @@
 <!DOCTYPE html>
-<html>
-    <head>
+<html lang="zxx" class="no-js">
+<head>
+  <!-- Mobile Specific Meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Favicon-->
+  <link rel="shortcut icon" href="img/fav.png">
+  <!-- meta character set -->
+  <meta charset="UTF-8">
+  <!-- Site Title -->
+  <title>Macro</title>
 
-            <title>หน้าหลักผู้ขนส่ง</title>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1">
-            <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-            <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-            <!--Theme Responsive css-->
-            <link rel="stylesheet" href="responsive.css" />
-            <style>
-                body, html {height: 100%}
-                html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
-                A:link	{
-                text-decoration:none;
-                }
-                A:visited	{
-                text-decoration:none;
-                }
-               
-            </style>
+  <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
+    <!--
+    CSS
+    ============================================= -->
+    <link rel="stylesheet" href="assets/driverhome/css/linearicons.css">
+    <link rel="stylesheet" href="assets/driverhome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/driverhome/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/driverhome/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/driverhome/css/jquery-ui.css">				
+    <link rel="stylesheet" href="assets/driverhome/css/nice-select.css">							
+    <link rel="stylesheet" href="assets/driverhome/css/animate.min.css">
+    <link rel="stylesheet" href="assets/driverhome/css/owl.carousel.css">				
+    <link rel="stylesheet" href="assets/driverhome/css/main.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
             
-    </head>
-
-<body>
-
-
-    <!-- Menu Container -->
-    <div class="w3-top">
-            <div class="w3-bar w3-white w3-padding w3-card">
-                <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction4()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-              <img src="logo.png">
-              <div class="w3-right">
-                <a href="javascript:void(0)" onclick="openMenu(event, 'order');" id="myLink" class="w3-bar-item w3-button tablink w3-hover-teal  w3-hide-small">ออเดอร์</a>
-                <a href="javascript:void(0)" onclick="openMenu(event, 'send');" class="w3-bar-item w3-button tablink w3-hover-teal  w3-hide-small">ยืนยันการส่ง</a>
-                <a href="javascript:void(0)" onclick="openMenu(event, 'history');" class="w3-bar-item w3-button tablink w3-hover-teal  w3-hide-small">ประวัติการส่ง</a>
-                <a href="index.html" class="w3-bar-item w3-button tablink w3-hover-teal  w3-hide-small" >ออกจากระบบ</a>
-            </div>
-            </div>
-            <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
-            <div id="navDemo" class="w3-bar-block w3-teal w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-        <a href="javascript:void(0)" onclick="openMenu(event, 'order');" id="myLink" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction4()">ออเดอร์</a>
-        <a href="javascript:void(0)" onclick="openMenu(event, 'send');" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction4()">ยืนยันการส่ง</a>
-        <a href="javascript:void(0)" onclick="openMenu(event, 'history');" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction4()">ประวัติการส่ง</a>
-        <a href="index.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction4()">ออกจากระบบ</a>
+  </head>
+  <body>	
+    
+    <header class="w3-display-container w3-grayscal" id="home">
+      <div class="w3-white w3-text-grey">
+        <div class="container">
+              <div class="w3-col m3 w3-padding-large">
+                  <img src="assets/driverhome/images/driver.png" class="w3-image"style="width:100%" alt="Avatar">
+              </div>
+              <div class="w3-col m9 w3-padding-large">
+                  <p><i class="fa fa-id-card fa-fw w3-margin-right w3-large w3-text-teal"></i>ID : DV00012</p>
+                  <p><i class="fa fa-user-circle fa-fw w3-margin-right w3-large w3-text-teal"></i>นายจิรกิตติ์ ถาวรวงศ์</p>
+                  <p><i class="fa fa-check-circle fa-fw w3-margin-right w3-large w3-text-teal"></i>ตรวจเอกสารเรียบร้อยแล้ว
+                  <a href="dvedit.html"><i>แก้ไขข้อมูล</i></a></p>
+                  <p>คะแนนความนิยม
+                  <i class="fa fa-star fa-fw w3-margin-right w3-large w3-text-teal"></i>
+                  <i class="fa fa-star fa-fw w3-margin-right w3-large w3-text-teal"></i>
+                  <i class="fa fa-star fa-fw w3-margin-right w3-large w3-text-teal"></i>
+                  <i class="fa fa-star-half-full fa-fw w3-margin-right w3-large w3-text-teal"></i>
+                  <i class="fa fa-star-o fa-fw w3-margin-right w3-large w3-text-teal"></i></p>
+              </div>
+          </div>
       </div>
-    </div>
+    </header>
+    
+    <!-- Start menu-area Area -->
+          <section class="menu-area section-gap" id="menu">
+              <div class="container">
+                  <ul class="filter-wrap filters col-lg-12 no-padding">
+                      <li class="active" data-filter=".order">ออเดอร์</li>
+                      <li data-filter=".send">ยืนยันการส่ง</li>
+                      <li data-filter=".history">ประวัติการส่ง</li>
+                  </ul>
+                  
+                  <!--ออเดอร์--> 
+                  <div class="filters-content">
+                      <div class="row grid">
+                          <div class="col-md-6 all order">
+                            <div class="single-menu">
+                              <div class="title-wrap d-flex justify-content-between">
+                                <p>OD0012 Kawinna</p>
+                                <p class="price">5 กม.</p>
+                              </div>			
+                              <p class="w3-center">
+                                <button class="w3-button w3-red w3-round-xlarge" onclick="myFunction2()">ปฏิเสธ</button>
+                                <button class="w3-button w3-green w3-round-xlarge" onclick="myFunction()">ตอบรับ</button>
+                              </p>									
+                            </div>					                               
+                          </div>  
+                          <div class="col-md-6 all order">
+                            <div class="single-menu">
+                              <div class="title-wrap d-flex justify-content-between">
+                                <p>OD0010 Cha</p>
+                                <p class="price">10.5 กม.</p>
+                              </div>			
+                              <p class="w3-center">
+                                <button class="w3-button w3-red w3-round-xlarge" onclick="myFunction2()">ปฏิเสธ</button>
+                                <button class="w3-button w3-green w3-round-xlarge" onclick="myFunction()">ตอบรับ</button>
+                              </p>									
+                            </div>					                               
+                          </div>  
+                          <div class="col-md-6 all order">
+                            <div class="single-menu">
+                              <div class="title-wrap d-flex justify-content-between">
+                                <p>OD0008 A-riza</p>
+                                <p class="price">3.2 กม.</p>
+                              </div>			
+                              <p class="w3-center">
+                                <button class="w3-button w3-red w3-round-xlarge" onclick="myFunction2()">ปฏิเสธ</button>
+                                <button class="w3-button w3-green w3-round-xlarge" onclick="myFunction()">ตอบรับ</button>
+                              </p>									
+                            </div>					                               
+                          </div>  
+                          <div class="col-md-6 all order">
+                            <div class="single-menu">
+                              <div class="title-wrap d-flex justify-content-between">
+                                <p>OD0005 Nan</p>
+                                <p class="price">7.8 กม.</p>
+                              </div>			
+                              <p class="w3-center">
+                                <button class="w3-button w3-red w3-round-xlarge" onclick="myFunction2()">ปฏิเสธ</button>
+                                <button class="w3-button w3-green w3-round-xlarge" onclick="myFunction()">ตอบรับ</button>
+                              </p>									
+                            </div>					                               
+                          </div>  
+                          <div class="col-md-6 all order">
+                            <div class="single-menu">
+                              <div class="title-wrap d-flex justify-content-between">
+                                <p>OD0004 Kawinna</p>
+                                <p class="price">6.2 กม.</p>
+                              </div>			
+                              <p class="w3-center">
+                                <button class="w3-button w3-red w3-round-xlarge" onclick="myFunction2()">ปฏิเสธ</button>
+                                <button class="w3-button w3-green w3-round-xlarge" onclick="myFunction()">ตอบรับ</button>
+                              </p>									
+                            </div>					                               
+                          </div>     
+                        
+                     <!--ยืนยันการส่ง--> 
+                          <div class="col-md-6 all send">
+                            <div class="single-menu">
+                              <div class="title-wrap d-flex justify-content-between">
+                                <p>OD0012 Kawinna</p>
+                                <p class="price">5 กม.</p>
+                              </div>			
+                              <p class="w3-center">
+                                <button class="w3-button w3-red w3-round-xlarge"><a href="dvcomplaint.html">แจ้งปัญหา</a></button>
+                                <button class="w3-button w3-green w3-round-xlarge" onclick="myFunction3()">ยืนยัน</button>
+                              </p>									
+                            </div>	
+                          </div>
+                          <div class="col-md-6 all send">
+                            <div class="single-menu">
+                              <div class="title-wrap d-flex justify-content-between">
+                                <p>OD0010 Cha</p>
+                                <p class="price">10.5 กม.</p>
+                              </div>			
+                              <p class="w3-center">
+                                <button class="w3-button w3-red w3-round-xlarge"><a href="dvcomplaint.html">แจ้งปัญหา</a></button>
+                                <button class="w3-button w3-green w3-round-xlarge" onclick="myFunction3()">ยืนยัน</button>
+                              </p>									
+                            </div>	
+                          </div>
+                          <div class="col-md-6 all send">
+                            <div class="single-menu">
+                              <div class="title-wrap d-flex justify-content-between">
+                                <p>OD0008 A-riza</p>
+                                <p class="price">3.2 กม.</p>
+                              </div>			
+                              <p class="w3-center">
+                                <button class="w3-button w3-red w3-round-xlarge"><a href="dvcomplaint.html">แจ้งปัญหา</a></button>
+                                <button class="w3-button w3-green w3-round-xlarge" onclick="myFunction3()">ยืนยัน</button>
+                              </p>									
+                            </div>	
+                          </div>
+                          <div class="col-md-6 all send">
+                            <div class="single-menu">
+                              <div class="title-wrap d-flex justify-content-between">
+                                <p>OD0005 Nan</p>
+                                <p class="price">7.8 กม.</p>
+                              </div>			
+                              <p class="w3-center">
+                                <button class="w3-button w3-red w3-round-xlarge"><a href="dvcomplaint.html">แจ้งปัญหา</a></button>
+                                <button class="w3-button w3-green w3-round-xlarge" onclick="myFunction3()">ยืนยัน</button>
+                              </p>									
+                            </div>	
+                          </div>
+                          <div class="col-md-6 all send">
+                            <div class="single-menu">
+                              <div class="title-wrap d-flex justify-content-between">
+                                <p>OD0004 Kawinna</p>
+                                <p class="price">6.2 กม.</p>
+                              </div>			
+                              <p class="w3-center">
+                                <button class="w3-button w3-red w3-round-xlarge"><a href="dvcomplaint.html">แจ้งปัญหา</a></button>
+                                <button class="w3-button w3-green w3-round-xlarge" onclick="myFunction3()">ยืนยัน</button>
+                              </p>									
+                            </div>	
+                          </div>
 
-    <div class="w3-container w3-padding-32 w3-large" id="main">
-        <div class="w3-content">
-            <div id="order" class="w3-container menu w3-padding-16 w3-white">
-                    <header class="w3-display-container w3-grayscal" id="home">
-                            <div class="w3-white w3-text-grey">
-                                <div class="w3-row">
-                                    <div class="w3-col m3 w3-padding-large">
-                                        <img src="assets/driverhome/images/driver.png" class="w3-image"style="width:100%" alt="Avatar">
-                                    </div>
-                                    <div class="w3-col m9 w3-padding-large">
-                                        <p><i class="fa fa-id-card fa-fw w3-margin-right w3-large w3-text-teal"></i>ID : DV00012</p>
-                                        <p><i class="fa fa-user-circle fa-fw w3-margin-right w3-large w3-text-teal"></i>นายจิรกิตติ์ ถาวรวงศ์</p>
-                                        <p><i class="fa fa-check-circle fa-fw w3-margin-right w3-large w3-text-teal"></i>ตรวจเอกสารเรียบร้อยแล้ว
-                                        <a href="dvedit.html"><i>แก้ไขข้อมูล</i></a></p>
-                                        <p>คะแนนความนิยม
-                                        <i class="fa fa-star fa-fw w3-margin-right w3-large w3-text-teal"></i>
-                                        <i class="fa fa-star fa-fw w3-margin-right w3-large w3-text-teal"></i>
-                                        <i class="fa fa-star fa-fw w3-margin-right w3-large w3-text-teal"></i>
-                                        <i class="fa fa-star-half-full fa-fw w3-margin-right w3-large w3-text-teal"></i>
-                                        <i class="fa fa-star-o fa-fw w3-margin-right w3-large w3-text-teal"></i></p>
-                                    </div>
-                                </div>
-                            </div>
-                    </header>
-                    <hr>
-                    <p class="w3-center">ออเดอร์</p>
-                <table class="w3-table-all w3-hoverable">
-                    <tr>
-                        <td>OD0012
-                        Kawinna</td>
-                        <td>5 กม.</td>
-                        <td><button class="w3-button w3-red w3-round-xlarge" onclick="myFunction2()">ปฏิเสธ</button></td>
-                        <td><button class="w3-button w3-green w3-round-xlarge" onclick="myFunction()">ตอบรับ</button></td>
-                    </tr>
-                    <tr>
-                        <td>OD0010
-                        Cha</td>
-                        <td>10.5 กม.</td>
-                        <td><button class="w3-button w3-red w3-round-xlarge" onclick="myFunction2()">ปฏิเสธ</button></td>
-                        <td><button class="w3-button w3-green w3-round-xlarge" onclick="myFunction()">ตอบรับ</button></td>
-                    </tr>
-                    <tr>
-                        <td>OD0008
-                        A-riza</td>
-                        <td>3.2 กม.</td>
-                        <td><button class="w3-button w3-red w3-round-xlarge" onclick="myFunction2()">ปฏิเสธ</button></td>
-                        <td><button class="w3-button w3-green w3-round-xlarge" onclick="myFunction()">ตอบรับ</button></td>
-                    </tr>
-                    <tr>
-                        <td>OD0005
-                        Nan</td>
-                        <td>7.8 กม.</td>
-                        <td><button class="w3-button w3-red w3-round-xlarge" onclick="myFunction2()">ปฏิเสธ</button></td>
-                        <td><button class="w3-button w3-green w3-round-xlarge" onclick="myFunction()">ตอบรับ</button></td>
-                    </tr>
-                    <tr>
-                        <td>OD0004
-                        Kawinna</td>
-                        <td>6.2 กม.</td>
-                        <td><button class="w3-button w3-red w3-round-xlarge" onclick="myFunction2()">ปฏิเสธ</button></td>
-                        <td><button class="w3-button w3-green w3-round-xlarge" onclick="myFunction()">ตอบรับ</button></td>
-                    </tr>  
-                </table>
-            </div>
-        
-            <div id="send" class="w3-container menu w3-padding-16 w3-white">
-                    <header class="w3-display-container w3-grayscal" id="home">
-                            <div class="w3-white w3-text-grey">
-                                <div class="w3-row">
-                                    <div class="w3-col m3 w3-padding-large">
-                                        <img src="assets/driverhome/images/driver.png" class="w3-image"style="width:100%" alt="Avatar">
-                                    </div>
-                                    <div class="w3-col m9 w3-padding-large">
-                                        <p><i class="fa fa-id-card fa-fw w3-margin-right w3-large w3-text-teal"></i>ID : DV00012</p>
-                                        <p><i class="fa fa-user-circle fa-fw w3-margin-right w3-large w3-text-teal"></i>นายจิรกิตติ์ ถาวรวงศ์</p>
-                                        <p><i class="fa fa-check-circle fa-fw w3-margin-right w3-large w3-text-teal"></i>ตรวจเอกสารเรียบร้อยแล้ว
-                                        <a href="dvedit.html"><i>แก้ไขข้อมูล</i></a></p>
-                                        <p>คะแนนความนิยม
-                                        <i class="fa fa-star fa-fw w3-margin-right w3-large w3-text-teal"></i>
-                                        <i class="fa fa-star fa-fw w3-margin-right w3-large w3-text-teal"></i>
-                                        <i class="fa fa-star fa-fw w3-margin-right w3-large w3-text-teal"></i>
-                                        <i class="fa fa-star-half-full fa-fw w3-margin-right w3-large w3-text-teal"></i>
-                                        <i class="fa fa-star-o fa-fw w3-margin-right w3-large w3-text-teal"></i></p>
-                                    </div>
-                                </div>
-                            </div>
-                    </header>
-                    <hr>
-                    <p class="w3-center">ยืนยันการส่ง</p>
-                <table class="w3-table-all w3-hoverable">
-                    <tr>
-                        <td>OD0012
-                        Kawinna</td>
-                        <td><button class="w3-button w3-red w3-round-xlarge"><a href="dvcomplaint.html">แจ้งปัญหา</a></button></td>
-                        <td><button class="w3-button w3-green w3-round-xlarge" onclick="myFunction3()">ยืนยัน</button></td>
-                    </tr>
-                    <tr>
-                        <td>OD0010
-                        Cha</td>
-                        <td><button class="w3-button w3-red w3-round-xlarge"><a href="dvcomplaint.html">แจ้งปัญหา</a></button></td>
-                        <td><button class="w3-button w3-green w3-round-xlarge" onclick="myFunction3()">ยืนยัน</button></td>
-                    </tr>
-                    <tr>
-                        <td>OD0008
-                        A-riza</td>
-                        <td><button class="w3-button w3-red w3-round-xlarge"><a href="dvcomplaint.html">แจ้งปัญหา</a></button></td>
-                        <td><button class="w3-button w3-green w3-round-xlarge" onclick="myFunction3()">ยืนยัน</button></td>
-                    </tr>
-                    <tr>
-                        <td>OD0005
-                        Nan</td>
-                        <td><button class="w3-button w3-red w3-round-xlarge"><a href="dvcomplaint.html">แจ้งปัญหา</a></button></td>
-                        <td><button class="w3-button w3-green w3-round-xlarge" onclick="myFunction3()">ยืนยัน</button></td>
-                    </tr>
-                    <tr>
-                        <td>OD0004
-                        Kawinna</td>
-                        <td><button class="w3-button w3-red w3-round-xlarge"><a href="dvcomplaint.html">แจ้งปัญหา</a></button></td>
-                        <td><button class="w3-button w3-green w3-round-xlarge" onclick="myFunction3()">ยืนยัน</button></td>
-                    </tr>  
-                </table>
-            </div>
-          
-      
-      
-            <div id="history" class="w3-container menu w3-padding-16 w3-white">
-                    <header class="w3-display-container w3-grayscal" id="home">
-                            <div class="w3-white w3-text-grey">
-                                <div class="w3-row">
-                                    <div class="w3-col m3 w3-padding-large">
-                                        <img src="assets/driverhome/images/driver.png" class="w3-image"style="width:100%" alt="Avatar">
-                                    </div>
-                                    <div class="w3-col m9 w3-padding-large">
-                                        <p><i class="fa fa-id-card fa-fw w3-margin-right w3-large w3-text-teal"></i>ID : DV00012</p>
-                                        <p><i class="fa fa-user-circle fa-fw w3-margin-right w3-large w3-text-teal"></i>นายจิรกิตติ์ ถาวรวงศ์</p>
-                                        <p><i class="fa fa-check-circle fa-fw w3-margin-right w3-large w3-text-teal"></i>ตรวจเอกสารเรียบร้อยแล้ว
-                                        <a href="dvedit.html"><i>แก้ไขข้อมูล</i></a></p>
-                                        <p>คะแนนความนิยม
-                                        <i class="fa fa-star fa-fw w3-margin-right w3-large w3-text-teal"></i>
-                                        <i class="fa fa-star fa-fw w3-margin-right w3-large w3-text-teal"></i>
-                                        <i class="fa fa-star fa-fw w3-margin-right w3-large w3-text-teal"></i>
-                                        <i class="fa fa-star-half-full fa-fw w3-margin-right w3-large w3-text-teal"></i>
-                                        <i class="fa fa-star-o fa-fw w3-margin-right w3-large w3-text-teal"></i></p>
-                                    </div>
-                                </div>
-                            </div>
-                    </header>
-                    <hr>
-                    <p class="w3-center">ประวัติการส่ง</p>
-                <table class="w3-table-all w3-hoverable">
-                    <tr>
-                        <td>OD0012</td>
-                        <td>Kawinna</td>
-                        <td>50 บาท</td>
-                        <td>กำลังโอนเงิน</td>
-                    </tr>
-                    <tr>
-                        <td>OD0010</td>
-                        <td>Cha</td>
-                        <td>60 บาท</td>
-                        <td>โอนเงินแล้ว</td>
-                    </tr>
-                    <tr>
-                        <td>OD0008</td>
-                        <td>A-riza</td>
-                        <td>55 บาท</td>
-                        <td>โอนเงินแล้ว</td>
-                    </tr>
-                    <tr>
-                        <td>OD0005</td>
-                        <td>Nan</td>
-                        <td>80 บาท</td>
-                        <td>โอนเงินแล้ว</td>
-                    </tr>
-                    <tr>
-                        <td>OD0004</td>
-                        <td>Kawinna</td>
-                        <td>50 บาท</td>
-                        <td>โอนเงินแล้ว</td>
-                    </tr>  
-                </table>
-            </div>
-        </div><br>
-      <br>
 
-<script>
-    // Tabbed Menu
-        function openMenu(evt, menuName) {
-            var i, x, tablinks;
-            x = document.getElementsByClassName("menu");
-            for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
-        }
-            tablinks = document.getElementsByClassName("tablink");
-            for (i = 0; i < x.length; i++) {
-            tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
-        }
-            document.getElementById(menuName).style.display = "block";
-            evt.currentTarget.firstElementChild.className += " w3-red";
-        }
-            document.getElementById("myLink").click();
-                
+                          <!--ประวัติการส่ง--> 
+                          <div class="col-md-6 all history">
+                            <div class="single-menu">
+                              <div class="title-wrap d-flex justify-content-between">
+                                <p>OD0004 Kawinna</p>
+                                <p class="price">50 บาท</p>
+                                <p>กำลังโอนเงิน</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6 all history">
+                            <div class="single-menu">
+                              <div class="title-wrap d-flex justify-content-between">
+                                <p>OD0010 Cha</p>
+                                <p class="price">60 บาท</p>
+                                <p>โอนเงินแล้ว</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6 all history">
+                            <div class="single-menu">
+                              <div class="title-wrap d-flex justify-content-between">
+                                <p>OD0008 A-riza</p>
+                                <p class="price">55 บาท</p>
+                                <p>โอนเงินแล้ว</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6 all history">
+                            <div class="single-menu">
+                              <div class="title-wrap d-flex justify-content-between">
+                                <p>OD0005 Nan</p>
+                                <p class="price">80 บาท</p>
+                                <p>โอนเงินแล้ว</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6 all history">
+                            <div class="single-menu">
+                              <div class="title-wrap d-flex justify-content-between">
+                                <p>OD0004 Kawinna</p>
+                                <p class="price">50 บาท</p>
+                                <p>โอนเงินแล้ว</p>
+                              </div>
+                            </div>
+                          </div>
+
+
+
+                          
+                          </div>                            
+                      </div>
+                  </div>
+          </section>
+          <!-- End menu-area Area -->			
+
+    
+    
+    <script>
     // ยืนยันคำร้องขอ
-        function myFunction() {
+    function myFunction() {
             alert("ยินดีด้วยสำหรับรายได้ครั้งนี้ ส่งของแล้วเราจะโอนเงินให้คุณ");
             window.location.href = "map.html";
         }
@@ -269,27 +264,24 @@
         function myFunction3() {
             alert("ทางระบบกำลังโอนเงินให้คุณ");
     }
+</script>		
 
-    //ซ่อนเมนู
-    function myFunction4() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else { 
-        x.className = x.className.replace(" w3-show", "");
-    }
-}
-// When the user clicks anywhere outside of the modal, close it
-var modal = document.getElementById('ticketModal');
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-</script>
-
-                     
-</body>
+    <script src="assets/driverhome/js/vendor/jquery-2.2.4.min.js"></script>
+    <script src="assets/driverhome/js/popper.min.js"></script>
+    <script src="assets/driverhome/js/vendor/bootstrap.min.js"></script>			
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>		
+     <script src="assets/driverhome/js/jquery-ui.js"></script>					
+      <script src="assets/driverhome/js/easing.min.js"></script>			
+    <script src="assets/driverhome/js/hoverIntent.js"></script>
+    <script src="assets/driverhome/js/superfish.min.js"></script>	
+    <script src="assets/driverhome/js/jquery.ajaxchimp.min.js"></script>
+    <script src="assets/driverhome/js/jquery.magnific-popup.min.js"></script>						
+    <script src="assets/driverhome/js/jquery.nice-select.min.js"></script>					
+    <script src="assets/driverhome/js/owl.carousel.min.js"></script>			
+          <script src="assets/driverhome/js/isotope.pkgd.min.js"></script>								
+    <script src="assets/driverhome/js/mail-script.js"></script>	
+    <script src="assets/driverhome/js/main.js"></script>	
+  </body>
 </html>
 
 <!--
